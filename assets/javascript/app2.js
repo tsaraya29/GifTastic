@@ -57,7 +57,7 @@ function renderButtons() {
 
     // Constructing a URL to search Giphy for the name of the person who said the quote
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      newTopic + "&api_key=dc6zaTOxFJmzC&limit=10";
+      newTopic + "&api_key=U8JI8rVdSJlQ8F9WXg9VSbn8W0Sls1zK&limit=10";
 
     // Performing our AJAX GET request
     $.ajax({
