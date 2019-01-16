@@ -28,8 +28,9 @@ $("#topicAdd").on("click", function(event) {
 //     // clear();
 
 //     // Get the to-do "value" from the textbox and store it a variable
-    var newTopic = $("#term").text;
-    $("#testarea").append(newTopic);
-    // topics.push(newTopic);
+    var newTopic = $("#term").val().trim(); 
+    var newButton = $("<button>").text(newTopic)
+    $("#buttons-go-here").append(newButton);
+
 });
 
