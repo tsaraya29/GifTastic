@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var topics = ["rain","thunder","rainbows","mountains","fields","rivers","clouds" ];
 
 function renderButtons() {
@@ -5,7 +6,7 @@ function renderButtons() {
     // Deleting the movie buttons prior to adding new movie buttons
     // (this is necessary otherwise we will have repeat buttons)
     $("#buttons-go-here").empty();
-
+    console.log(topics)
     // Looping through the array of nature topics
     for (var i = 0; i < topics.length; i++) {
 
@@ -39,18 +40,14 @@ function renderButtons() {
     // calling renderButtons which handles the processing of our movie array
     renderButtons();
   });
-
-
-//Calls inital function when page loads
-  renderButtons();
+ 
 
   //GIPHY ACTION
    // Event listener for our topic buttons
    $(".naturally").on("click", function(event) {
     // In this case, the "this" keyword refers to the button that was clicked
-    event.preventDefault();
-   // console.log(topics);
-
+    event.preventDefault();  
+    
     var newTopic = $(this).attr("data-name");
     console.log(newTopic);
     
@@ -117,3 +114,7 @@ function renderButtons() {
       $(this).attr("data-state", "still");
     }
   });
+  
+  //Calls inital function when page loads
+  renderButtons();
+});
