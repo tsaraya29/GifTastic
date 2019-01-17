@@ -44,7 +44,7 @@ function renderButtons() {
 
   //GIPHY ACTION
    // Event listener for our topic buttons
-   $(".naturally").on("click", function(event) {
+   $(".naturally").on("click ", function(event) {
     // In this case, the "this" keyword refers to the button that was clicked
     event.preventDefault();  
     
